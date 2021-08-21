@@ -1,0 +1,52 @@
+.row{
+    margin-left: 20px;
+    color: white;
+}
+.rowPosters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.rowPosters::-webkit-scrollbar {
+    display: none;
+    height: 10px;
+}
+.rowPosters:hover::-webkit-scrollbar {
+    display: block;
+}
+.rowPosters:hover{
+    margin-bottom: 0px;
+}
+.rowPosters::-webkit-scrollbar-thumb {
+    background: #333; 
+    border-radius: 10px;
+  }
+.rowPoster{
+    width: 100%;
+    object-fit: contain;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;
+    
+}
+.rowPoster:hover{
+    transform: scale(1.08);
+}
+.rowPosterLarger{
+    max-height: 250px;
+}
+.rowPosterLarger:hover{
+    transform: scale(1.09);
+}
+
+/* .scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+  .card {
+    flex: 0 0 auto;
+  }
+} */
